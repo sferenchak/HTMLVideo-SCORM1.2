@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Video Course Test</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<main>
+			<h1>Video Course Test</h1>
+			<div class="player" oncontextmenu="return false;">
+				<video controls src="./videos/video.mp4" preload="metadata"></video>
+				<div class="controls">
+					<button
+						class="play"
+						data-icon="P"
+						aria-label="play pause toggle"
+					></button>
+					<button class="stop" data-icon="S" aria-label="stop"></button>
+					<div class="timer">
+						<div class="timer-bar"></div>
+						<div class="furthest-time-marker"></div>
+						<span class="currentTime" aria-label="timer">00:00:00</span>
+						/
+						<span class="duration" aria-label="duration">00:00:00</span>
+					</div>
+					<button class="rwd" data-icon="B" aria-label="rewind"></button>
+					<button
+						class="fwd disabled"
+						data-icon="F"
+						aria-label="fast forward"
+					></button>
+				</div>
+			</div>
+		</main>
+		<script src="./js/scormfunctions.js" type="text/javascript"></script>
+		<script
+			src="./js/contentfunctions.bundle.js"
+			type="text/javascript"
+		></script>
+	</body>
+</html>
